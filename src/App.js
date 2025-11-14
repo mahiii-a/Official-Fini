@@ -9,6 +9,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import "./App.css";
 import Layout from "./NavbarFooter/Layout";
 import PopupMessage from "../src/Components/PopupMessage.js";
+import Quiz from "./quiz/quiz.js";
 
 // import Loader from './Loader/Loader';
 
@@ -141,6 +142,7 @@ const AppContent = () => {
           <Route path="/events" element={<Events />} />
           <Route path="/sponsors" element={<Sponsor />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/quiz" element={<Quiz/>} />
 
           {/* Under resources */}
           <Route
